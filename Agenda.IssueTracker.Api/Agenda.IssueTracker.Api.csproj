@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <Company>Agenda Software, LLC</Company>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <AssemblyTitle>Issue Tracker Web Application</AssemblyTitle>
+    <Description>This is Issue Tracker Web Application library.</Description>
+    <Copyright>Agenda Software 2017</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>1.0.0-alpha</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Agenda.Common.Model\Agenda.Common.Model.csproj" />
+    <ProjectReference Include="..\Agenda.Common.Data\Agenda.Common.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Company>Agenda Software, LLC</Company>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <AssemblyTitle>Common Data Library</AssemblyTitle>
+    <Description>This is shared common data library of Agenda Software projects.</Description>
+    <Copyright>Agenda Software 2017</Copyright>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>1.0.0-alpha</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Agenda.Common.Model\Agenda.Common.Model.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0</TargetFrameworks>
+  </PropertyGroup>
+
+</Project>
